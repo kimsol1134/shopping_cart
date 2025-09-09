@@ -1,0 +1,136 @@
+.summary {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.summaryContent {
+  margin-bottom: 24px;
+}
+
+.freeShippingMessage {
+  background-color: #e8f5e8;
+  color: #2d5016;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.label {
+  font-size: 16px;
+  color: #666;
+}
+
+.value {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.value.free {
+  color: #2d5016;
+  font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 16px 0;
+}
+
+.totalRow {
+  padding: 12px 0;
+}
+
+.totalRow .label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.totalRow .value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.orderButton {
+  width: 100%;
+  padding: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.orderButton:hover:not(.disabled) {
+  background-color: #0056b3;
+}
+
+.orderButton.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .summary {
+    position: static;
+    margin-top: 20px;
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .label {
+    font-size: 14px;
+  }
+  
+  .value {
+    font-size: 14px;
+  }
+  
+  .totalRow .label {
+    font-size: 16px;
+  }
+  
+  .totalRow .value {
+    font-size: 18px;
+  }
+  
+  .orderButton {
+    padding: 14px;
+    font-size: 14px;
+  }
+  
+  .freeShippingMessage {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
